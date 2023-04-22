@@ -42,7 +42,6 @@ modifier cost(uint _amount){
      owner.transfer(msg.value); 
      (bool sent,bytes memory data) = owner.call{value:msg.value}("");
      require(true);
-
      emit Occupy(msg.sender,msg.value);
  
      
